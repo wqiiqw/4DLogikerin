@@ -26,20 +26,17 @@ stream.exe -m ..\..\..\models\ggml-base.bin -l zh
 ```
 
 3. LLM and RAG
-3.0 Install Ipex-LLM for Intel iGPU following 
+3.0 Install Ipex-LLM for Intel iGPU following https://ipex-llm.readthedocs.io/en/latest/doc/LLM/Quickstart/chatchat_quickstart.html and https://github.com/intel-analytics/Langchain-Chatchat/blob/ipex-llm/INSTALL_win_mtl.md# 
 3.1 启动Anaconda Prompt，切换到路径'D:\projects\Langchain-Chatchat',通过conda启动'ipex-llm-langchain-chatchat'这个环境, 然后设置环境变量，最后启动startup.py，通过浏览器登录打开webui使用RAG：
 
 ```
 conda activate ipex-llm-langchain-chatchat
 
-set USE_XETLA=OFF
-set SYCL_PI_LEVEL_ZERO_USE_IMMEDIATE_COMMANDLISTS=1
 set SYCL_CACHE_PERSISTENT=1
-set BIGDL_QUANTIZE_KV_CACHE=1
 set BIGDL_LLM_XMX_DISABLED=1
 
-set no_proxy=localhost,127.0.0.1
 set BIGDL_IMPORT_IPEX=0
+set no_proxy=localhost,127.0.0.1
 
 python startup.py -a
 ```
