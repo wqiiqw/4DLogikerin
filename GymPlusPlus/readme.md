@@ -52,9 +52,13 @@ python startup.py -a
 ## 4. Cloud Streaming
 
 4.0 Install the Cloud Streaming from Intel open source project https://github.com/intel/cloud-streaming
+
 4.1 Following https://github.com/intel/cloud-streaming/blob/main/doc/windows_setup.rst to install "Desktop Capture" on High End PC with Intel ARC GPU.
+
 4.2 Following same link above to install the "Cloud Gaming Client" on Lenovo 联想小新 notebook.
+
 4.3 在ARC GPU PC上启动环法自行车2023游戏。然后启动,"Desktop Capture" server application.
+
 4.4 在联想小新上启动 “Cloud Gaming Client" to connect to the server to stream the game video.
 
 ## 5 环法自行车 2023 游戏
